@@ -1,6 +1,7 @@
 require 'aws-sdk'
 
 def handler(event:, context:)
+  # The name of the bucket passed in by the creation of the function
   bucket = ENV['BUCKET_NAME']
   # Create a timestamp file name
   timestamp = Time.now.utc.strftime('%Y%m%dT%H%M%S%z')
