@@ -41,8 +41,6 @@ Now we need to bootstrap our envionrment
 cdk bootstrap
 ```
 
-^ Show the CDK stack and the resources it created
-
 ---
 ## Add some code
 Now we can try add our code
@@ -66,7 +64,7 @@ Let's take a look at deploying this. Here is my workflow:
 
 There are some other tools like `synthesize` TODO explain the other options with `cdk`
 
-But we don't have any errors so lets :fire: :down_right_arrow: :hole: with `cdk deploy --all`
+But we don't have any errors so lets :fire: :arrow_lower_right: :hole: with `cdk deploy --all`
 
 Sweet that worked! Let's go on to a little more complex portion and we'll add the lambda function that writes to the bucket.
 
@@ -96,7 +94,7 @@ end
 ```
 
 Now we can get the lambda function created and have it use the code we just wrote. In our `lib/demo1-stack.ts` file at the top add:
-^ TODO: Explain these more
+
 ```
 import * as lambda from 'aws-cdk-lib/aws-lambda';
 import * as path from 'path';
